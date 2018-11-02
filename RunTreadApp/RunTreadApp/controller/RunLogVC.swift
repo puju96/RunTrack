@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  RunTreadApp
 //
 //  Created by Apple on 02/11/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class RunLogVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
