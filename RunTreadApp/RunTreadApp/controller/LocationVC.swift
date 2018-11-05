@@ -14,7 +14,7 @@ class LocationVC: UIViewController , MKMapViewDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-manager = CLLocationManager()
+        manager = CLLocationManager()
         manager?.desiredAccuracy = kCLLocationAccuracyBest
         manager?.activityType = .fitness
        

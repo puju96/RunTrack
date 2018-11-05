@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--View Controller-->
+        <!--Current RunVC-->
         <scene sceneID="o6h-GP-G7N">
             <objects>
-                <viewController id="7E1-w3-Bmc" sceneMemberID="viewController">
+                <viewController id="7E1-w3-Bmc" customClass="currentRunVC" customModule="RunTreadApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1h8-pH-nWw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,10 +163,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="pauseButton"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="RhZ-kB-3tH">
-                                <rect key="frame" x="55" y="564" width="60" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="END RUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhb-AJ-f4b">
                                 <rect key="frame" x="144" y="579" width="66" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -174,6 +170,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="RhZ-kB-3tH">
+                                <rect key="frame" x="55" y="564" width="60" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -194,6 +194,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XrV-pe-yAv"/>
                     </view>
+                    <connections>
+                        <outlet property="slideBtn" destination="RhZ-kB-3tH" id="ss2-Nu-wL3"/>
+                        <outlet property="swipeBG" destination="h9v-9m-DAk" id="4A5-AV-v7L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ce8-Gm-PKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
