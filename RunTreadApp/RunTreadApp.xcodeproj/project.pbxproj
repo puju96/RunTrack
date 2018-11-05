@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		18EF26CB21900F91009D05C7 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF26CA21900F91009D05C7 /* LocationVC.swift */; };
 		18EF26CD21901F67009D05C7 /* currentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF26CC21901F67009D05C7 /* currentRunVC.swift */; };
+		18EF26CF219054B0009D05C7 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF26CE219054B0009D05C7 /* extensions.swift */; };
 		18F43E07218C49F800A17333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43E06218C49F800A17333 /* AppDelegate.swift */; };
 		18F43E09218C49F800A17333 /* BeginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43E08218C49F800A17333 /* BeginVC.swift */; };
 		18F43E0B218C49F800A17333 /* RunLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43E0A218C49F800A17333 /* RunLogVC.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		18EF26CA21900F91009D05C7 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		18EF26CC21901F67009D05C7 /* currentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentRunVC.swift; sourceTree = "<group>"; };
+		18EF26CE219054B0009D05C7 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		18F43E03218C49F800A17333 /* RunTreadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTreadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F43E06218C49F800A17333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F43E08218C49F800A17333 /* BeginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginVC.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		18F43E1D218C527E00A17333 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				18EF26CE219054B0009D05C7 /* extensions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				18EF26CB21900F91009D05C7 /* LocationVC.swift in Sources */,
 				18F43E07218C49F800A17333 /* AppDelegate.swift in Sources */,
 				18F43E09218C49F800A17333 /* BeginVC.swift in Sources */,
+				18EF26CF219054B0009D05C7 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,7 +32,7 @@ class currentRunVC: LocationVC {
     
     override func viewWillAppear(_ animated: Bool) {
       manager?.delegate = self
-        manager?.distanceFilter = 10
+        manager?.distanceFilter = 3
         startRun()
     }
     func startRun(){
@@ -92,7 +92,7 @@ extension currentRunVC : CLLocationManagerDelegate{
         }
         else if let location = locations.last{
             runDistance += lastLocation.distance(from: location)
-            distanceLbl.text = "\(runDistance)"
+            distanceLbl.text = "\(runDistance.meterTomiles(places: 2))"
            
         }
         lastLocation = locations.last
