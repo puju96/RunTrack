@@ -20,9 +20,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="jVC-wU-NQI">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N4p-N8-xYk">
-                                <rect key="frame" x="0.0" y="82" width="375" height="379"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhY-GQ-wkD">
                                 <rect key="frame" x="162" y="40" width="51" height="20"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
@@ -42,15 +39,19 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kDu-Y2-C9M">
+                                <rect key="frame" x="0.0" y="82" width="375" height="379"/>
+                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZJ-iE-qfa">
                                 <rect key="frame" x="301" y="383" width="58" height="58"/>
                                 <state key="normal" image="centerNavButton"/>
+                                <connections>
+                                    <action selector="centerLocationBtnTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="zmZ-vR-lOq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="N4p-N8-xYk" firstAttribute="top" secondItem="dhY-GQ-wkD" secondAttribute="bottom" constant="22" id="0Oa-BY-nzI"/>
-                            <constraint firstItem="N4p-N8-xYk" firstAttribute="leading" secondItem="jVC-wU-NQI" secondAttribute="leading" id="3BE-IG-acA"/>
                             <constraint firstItem="jVC-wU-NQI" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="3ni-Lc-WSu"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="jVC-wU-NQI" secondAttribute="trailing" id="8fO-K4-swi"/>
                             <constraint firstItem="dhY-GQ-wkD" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="D3m-0C-pjC"/>
@@ -58,17 +59,22 @@
                             <constraint firstItem="pZJ-iE-qfa" firstAttribute="top" secondItem="jVC-wU-NQI" secondAttribute="bottom" constant="-235" id="GCi-sW-dvQ"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="jVC-wU-NQI" secondAttribute="bottom" id="M1y-LR-xHt"/>
                             <constraint firstItem="dhY-GQ-wkD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Tsz-FV-RZu"/>
+                            <constraint firstItem="6oY-w8-Rek" firstAttribute="top" secondItem="kDu-Y2-C9M" secondAttribute="bottom" constant="30" id="Uia-W9-KrK"/>
                             <constraint firstItem="pZJ-iE-qfa" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="bKK-JH-zcq"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="AFK-QZ-aYe" secondAttribute="bottom" constant="20" id="dh5-VE-yMy"/>
-                            <constraint firstItem="N4p-N8-xYk" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="gqB-id-NoD"/>
+                            <constraint firstItem="kDu-Y2-C9M" firstAttribute="top" secondItem="dhY-GQ-wkD" secondAttribute="bottom" constant="22" id="fHe-LY-xZq"/>
+                            <constraint firstItem="kDu-Y2-C9M" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="fbk-sL-0Jr"/>
+                            <constraint firstItem="kDu-Y2-C9M" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="krf-ZT-Kti"/>
                             <constraint firstItem="AFK-QZ-aYe" firstAttribute="top" secondItem="6oY-w8-Rek" secondAttribute="bottom" constant="15" id="n6d-Dg-pBz"/>
                             <constraint firstItem="6oY-w8-Rek" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="p1r-pt-qJa"/>
                             <constraint firstItem="jVC-wU-NQI" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="qlm-6a-Adq"/>
-                            <constraint firstItem="6oY-w8-Rek" firstAttribute="top" secondItem="N4p-N8-xYk" secondAttribute="bottom" constant="30" id="swG-lV-lyL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Run" image="tabbar-runIconGray" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="mapView" destination="kDu-Y2-C9M" id="ZDn-D9-rcO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

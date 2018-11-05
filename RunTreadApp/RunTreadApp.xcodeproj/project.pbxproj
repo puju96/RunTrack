@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18EF26CB21900F91009D05C7 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF26CA21900F91009D05C7 /* LocationVC.swift */; };
 		18F43E07218C49F800A17333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43E06218C49F800A17333 /* AppDelegate.swift */; };
 		18F43E09218C49F800A17333 /* BeginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43E08218C49F800A17333 /* BeginVC.swift */; };
 		18F43E0B218C49F800A17333 /* RunLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43E0A218C49F800A17333 /* RunLogVC.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18EF26CA21900F91009D05C7 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		18F43E03218C49F800A17333 /* RunTreadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTreadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F43E06218C49F800A17333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F43E08218C49F800A17333 /* BeginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginVC.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		18F43E1A218C524700A17333 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				18EF26CA21900F91009D05C7 /* LocationVC.swift */,
 				18F43E0A218C49F800A17333 /* RunLogVC.swift */,
 				18F43E08218C49F800A17333 /* BeginVC.swift */,
 			);
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F43E0B218C49F800A17333 /* RunLogVC.swift in Sources */,
+				18EF26CB21900F91009D05C7 /* LocationVC.swift in Sources */,
 				18F43E07218C49F800A17333 /* AppDelegate.swift in Sources */,
 				18F43E09218C49F800A17333 /* BeginVC.swift in Sources */,
 			);
