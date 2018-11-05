@@ -14,3 +14,21 @@ extension Double {
         return ((self / 1609.34) * divisor).rounded() / divisor
     }
 }
+
+extension Int {
+    func formatDurationString () -> String{
+        let durationHours = self / 3600
+        let durationMinute = (self % 3600) / 60
+        let durationSecond = (self % 3600) % 60
+        if durationSecond < 0{
+            return "00:00:00"
+        }else{
+            if durationHours == 0{
+                return String(format: "%02d:%02d", durationMinute,durationSecond)
+            }
+            else{
+                return String(format: "%02d:%02d:%02d", durationHours,durationMinute,durationSecond)
+            }
+        }
+    }
+}
