@@ -47,6 +47,14 @@ class currentRunVC: LocationVC {
         manager?.stopUpdatingLocation()
     }
     
+    func pauseRun(){
+        startLocation = nil
+        lastLocation = nil
+        timer.invalidate()
+        manager?.stopUpdatingLocation()
+        pauseBtn.setImage(#imageLiteral(resourceName: "resumeButton"), for: .normal)
+    }
+    
     func startTimer(){
         durationLbl.text = counter.formatDurationString()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
@@ -63,6 +71,11 @@ class currentRunVC: LocationVC {
     }
     
     @IBAction func pauseBtnTapped(_ sender: Any) {
+        if timer.isValid {
+            pauseRun()
+        }else {
+            startRun()
+        }
         
     }
     
@@ -77,6 +90,7 @@ class currentRunVC: LocationVC {
                 }
                 else if sliderView.center.x >= (swipeBG.center.x + maxPosition){
                     sliderView.center.x = swipeBG.center.x + maxPosition
+                    
                     dismiss(animated: true, completion: nil)
                 }
                 else{
