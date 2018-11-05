@@ -162,6 +162,9 @@
                                 <rect key="frame" x="253" y="561" width="59" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="pauseButton"/>
+                                <connections>
+                                    <action selector="pauseBtnTapped:" destination="7E1-w3-Bmc" eventType="touchUpInside" id="Ppd-kb-mYG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="END RUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhb-AJ-f4b">
                                 <rect key="frame" x="144" y="579" width="66" height="18"/>
@@ -195,6 +198,10 @@
                         <viewLayoutGuide key="safeArea" id="XrV-pe-yAv"/>
                     </view>
                     <connections>
+                        <outlet property="distanceLbl" destination="yWV-Fe-UdR" id="NKW-cW-lm5"/>
+                        <outlet property="durationLbl" destination="geK-Gr-Ce4" id="Ye7-J1-RhV"/>
+                        <outlet property="paceLbl" destination="4GF-u3-BR8" id="R8f-Aq-5Vn"/>
+                        <outlet property="pauseBtn" destination="WI6-rO-L0X" id="C8E-DP-PBk"/>
                         <outlet property="slideBtn" destination="RhZ-kB-3tH" id="ss2-Nu-wL3"/>
                         <outlet property="swipeBG" destination="h9v-9m-DAk" id="4A5-AV-v7L"/>
                     </connections>
