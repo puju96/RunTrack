@@ -45,6 +45,7 @@ class currentRunVC: LocationVC {
     
     func endRun(){
         manager?.stopUpdatingLocation()
+        // add relam object
     }
     
     func pauseRun(){
@@ -90,7 +91,7 @@ class currentRunVC: LocationVC {
                 }
                 else if sliderView.center.x >= (swipeBG.center.x + maxPosition){
                     sliderView.center.x = swipeBG.center.x + maxPosition
-                    
+                    endRun()
                     dismiss(animated: true, completion: nil)
                 }
                 else{

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18DDD17821916C3D007E4ACC /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDD17721916C3D007E4ACC /* Run.swift */; };
 		18EF26CB21900F91009D05C7 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF26CA21900F91009D05C7 /* LocationVC.swift */; };
 		18EF26CD21901F67009D05C7 /* currentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF26CC21901F67009D05C7 /* currentRunVC.swift */; };
 		18EF26CF219054B0009D05C7 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF26CE219054B0009D05C7 /* extensions.swift */; };
@@ -16,9 +17,11 @@
 		18F43E0E218C49F800A17333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F43E0C218C49F800A17333 /* Main.storyboard */; };
 		18F43E10218C49F900A17333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F43E0F218C49F900A17333 /* Assets.xcassets */; };
 		18F43E13218C49F900A17333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F43E11218C49F900A17333 /* LaunchScreen.storyboard */; };
+		B8FDF8AB131ACA22DAD8A96D /* Pods_RunTreadApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5731DF744C07981FB93C8D /* Pods_RunTreadApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18DDD17721916C3D007E4ACC /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		18EF26CA21900F91009D05C7 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		18EF26CC21901F67009D05C7 /* currentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentRunVC.swift; sourceTree = "<group>"; };
 		18EF26CE219054B0009D05C7 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
@@ -30,6 +33,9 @@
 		18F43E0F218C49F900A17333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F43E12218C49F900A17333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F43E14218C49F900A17333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D53E9325AEB059C70547790 /* Pods-RunTreadApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTreadApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunTreadApp/Pods-RunTreadApp.release.xcconfig"; sourceTree = "<group>"; };
+		92566929D75151DDE9BA8CE2 /* Pods-RunTreadApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTreadApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunTreadApp/Pods-RunTreadApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CC5731DF744C07981FB93C8D /* Pods_RunTreadApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunTreadApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8FDF8AB131ACA22DAD8A96D /* Pods_RunTreadApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				18F43E05218C49F800A17333 /* RunTreadApp */,
 				18F43E04218C49F800A17333 /* Products */,
+				9B8EBCA7C449B06CAF301A3B /* Pods */,
+				36AD229C35A6C2444920639A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +107,7 @@
 		18F43E1C218C527600A17333 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				18DDD17721916C3D007E4ACC /* Run.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -124,6 +134,23 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		36AD229C35A6C2444920639A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC5731DF744C07981FB93C8D /* Pods_RunTreadApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B8EBCA7C449B06CAF301A3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92566929D75151DDE9BA8CE2 /* Pods-RunTreadApp.debug.xcconfig */,
+				8D53E9325AEB059C70547790 /* Pods-RunTreadApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18F43E17218C49F900A17333 /* Build configuration list for PBXNativeTarget "RunTreadApp" */;
 			buildPhases = (
+				D3A872A7A2148D88739820DC /* [CP] Check Pods Manifest.lock */,
 				18F43DFF218C49F800A17333 /* Sources */,
 				18F43E00218C49F800A17333 /* Frameworks */,
 				18F43E01218C49F800A17333 /* Resources */,
+				898220C7A7530029FA2E0C6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +219,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		898220C7A7530029FA2E0C6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RunTreadApp/Pods-RunTreadApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunTreadApp/Pods-RunTreadApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A872A7A2148D88739820DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunTreadApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18F43DFF218C49F800A17333 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -200,6 +270,7 @@
 				18EF26CB21900F91009D05C7 /* LocationVC.swift in Sources */,
 				18F43E07218C49F800A17333 /* AppDelegate.swift in Sources */,
 				18F43E09218C49F800A17333 /* BeginVC.swift in Sources */,
+				18DDD17821916C3D007E4ACC /* Run.swift in Sources */,
 				18EF26CF219054B0009D05C7 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +415,7 @@
 		};
 		18F43E18218C49F900A17333 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92566929D75151DDE9BA8CE2 /* Pods-RunTreadApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -364,6 +436,7 @@
 		};
 		18F43E19218C49F900A17333 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D53E9325AEB059C70547790 /* Pods-RunTreadApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
