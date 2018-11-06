@@ -34,5 +34,31 @@ class Run : Object {
         self.date = NSDate()
     }
     
+    static func addDataToRealm(pace: Int , distance: Double , duration: Int){
+        REALM_QUEUE.sync {
+            let run = Run(pace: pace, distance: distance, duration: duration)
+            do{
+                let realm = try Realm()
+                try realm.write {
+                    realm.add(run)
+                }
+            }catch{
+                print("error in adding realm data")
+            }
+        }
+       
+    }
+    
+    static func getAllRun() -> Results<Run>? {
+        do{
+            let realm =  try Realm()
+            var runs = realm.objects(Run.self)
+            runs = runs.sorted(byKeyPath: "date", ascending: false)
+            return runs
+        }catch{
+          return nil
+        }
+    }
+    
 }
 
