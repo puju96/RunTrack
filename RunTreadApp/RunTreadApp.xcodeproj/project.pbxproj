@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18062A682192EED6007E88C4 /* realmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18062A672192EED6007E88C4 /* realmConfig.swift */; };
 		18DDD17821916C3D007E4ACC /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDD17721916C3D007E4ACC /* Run.swift */; };
 		18DDD17A21919384007E4ACC /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDD17921919384007E4ACC /* constants.swift */; };
 		18DDD17C21919966007E4ACC /* RunLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDD17B21919966007E4ACC /* RunLogCell.swift */; };
+		18DDD17E2191CD90007E4ACC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDD17D2191CD90007E4ACC /* Location.swift */; };
 		18EF26CB21900F91009D05C7 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF26CA21900F91009D05C7 /* LocationVC.swift */; };
 		18EF26CD21901F67009D05C7 /* currentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF26CC21901F67009D05C7 /* currentRunVC.swift */; };
 		18EF26CF219054B0009D05C7 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF26CE219054B0009D05C7 /* extensions.swift */; };
@@ -23,9 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18062A672192EED6007E88C4 /* realmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realmConfig.swift; sourceTree = "<group>"; };
 		18DDD17721916C3D007E4ACC /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		18DDD17921919384007E4ACC /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		18DDD17B21919966007E4ACC /* RunLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogCell.swift; sourceTree = "<group>"; };
+		18DDD17D2191CD90007E4ACC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		18EF26CA21900F91009D05C7 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		18EF26CC21901F67009D05C7 /* currentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentRunVC.swift; sourceTree = "<group>"; };
 		18EF26CE219054B0009D05C7 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				18DDD17721916C3D007E4ACC /* Run.swift */,
+				18DDD17D2191CD90007E4ACC /* Location.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				18DDD17921919384007E4ACC /* constants.swift */,
+				18062A672192EED6007E88C4 /* realmConfig.swift */,
 			);
 			path = utilities;
 			sourceTree = "<group>";
@@ -273,10 +279,12 @@
 			files = (
 				18EF26CD21901F67009D05C7 /* currentRunVC.swift in Sources */,
 				18F43E0B218C49F800A17333 /* RunLogVC.swift in Sources */,
+				18DDD17E2191CD90007E4ACC /* Location.swift in Sources */,
 				18EF26CB21900F91009D05C7 /* LocationVC.swift in Sources */,
 				18F43E07218C49F800A17333 /* AppDelegate.swift in Sources */,
 				18F43E09218C49F800A17333 /* BeginVC.swift in Sources */,
 				18DDD17821916C3D007E4ACC /* Run.swift in Sources */,
+				18062A682192EED6007E88C4 /* realmConfig.swift in Sources */,
 				18DDD17C21919966007E4ACC /* RunLogCell.swift in Sources */,
 				18EF26CF219054B0009D05C7 /* extensions.swift in Sources */,
 				18DDD17A21919384007E4ACC /* constants.swift in Sources */,
